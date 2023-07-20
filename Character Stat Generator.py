@@ -13,7 +13,6 @@ def charHealth():
     else:
       continue
 
-
 health1 = charHealth()
 health2 = charHealth()
 health3 = charHealth()
