@@ -1,4 +1,4 @@
-import os, time
+import os, time, random
 
 toDoList = []
 
@@ -27,8 +27,10 @@ while True:
     os.system("clear")
   else:
     os.system("clear")
-    print(f"try again 😊")
-    time.sleep(1)
+    greeting = ["dude!", "my friend!", "man!"]
+    randomGreeting = greeting[random.randint(0,2)]
+    print(f"Sorry {randomGreeting} try again. Maybe you spelled something wrong? 😊")
+    time.sleep(3)
     os.system("clear")
     
     
