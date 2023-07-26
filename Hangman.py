@@ -52,10 +52,12 @@ def game():
     if allLetters:
       os.system("clear")
       print(f" is correct. YOU WIN! You had {lives} lives left!")
+      time.sleep(2)
       break
     #if lives 0, give lost message and break loop (end game), else print remaining lives and continue
     if lives <= 0:
-      print(": 0 lives left. You lose!")
+      print(f": 0 lives left. You lose! The answer was --> {secret.title()}")
+      time.sleep(3)
       break
     else:
       print(f": {lives} left")
